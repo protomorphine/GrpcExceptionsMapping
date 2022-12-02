@@ -5,7 +5,7 @@
     </PropertyGroup>
 
     <ItemGroup Label="Project References">
-        <ProjectReference Include="..\..\Source\GrpcExceptionsMapping\GrpcExceptionsMapping.csproj"/>
+        <ProjectReference Include="..\..\Source\GrpcExceptionsMapping\GrpcExceptionsMapping.csproj" />
     </ItemGroup>
 
 </Project>
