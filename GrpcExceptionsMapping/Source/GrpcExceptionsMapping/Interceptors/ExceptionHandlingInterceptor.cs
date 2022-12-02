@@ -7,7 +7,7 @@ using GrpcExceptionsMapping.Map;
 /// <summary>
 /// Interceptor which handle exceptions.
 /// </summary>
-internal class ExceptionHandlingInterceptor : Interceptor
+internal sealed class ExceptionHandlingInterceptor : Interceptor
 {
     /// <summary>
     /// Map.

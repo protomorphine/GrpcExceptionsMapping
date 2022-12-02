@@ -27,8 +27,5 @@ public static class ServiceCollectionExtensions
     /// </summary>
     /// <param name="services">Service collection.</param>
     public static void UseGrpcExceptionMapping(this IServiceCollection services) =>
-        services.AddGrpc(opt =>
-        {
-            opt.Interceptors.Add<ExceptionHandlingInterceptor>();
-        });
+        services.AddGrpc(opt => opt.Interceptors.Add<ExceptionHandlingInterceptor>());
 }

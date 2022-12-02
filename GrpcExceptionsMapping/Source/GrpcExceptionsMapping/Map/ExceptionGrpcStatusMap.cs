@@ -5,7 +5,7 @@ using Grpc.Core;
 /// <summary>
 /// Exception to gRPC status code map.
 /// </summary>
-internal class ExceptionGrpcStatusMap
+internal sealed class ExceptionGrpcStatusMap
 {
     /// <summary>
     /// Gets dictionary with map.
