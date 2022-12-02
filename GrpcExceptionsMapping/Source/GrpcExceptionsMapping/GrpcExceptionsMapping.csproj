@@ -5,8 +5,8 @@
     </PropertyGroup>
 
     <PropertyGroup Label="Package">
-        <PackageId>Protomorphine.GrpcExceptionsMapping_0.0.0.1</PackageId>
-        <Version>0.0.0.1</Version>
+        <PackageId>Protomorphine.GrpcExceptionsMapping</PackageId>
+        <Version>0.0.1</Version>
         <Product>GrpcExceptionsMapping</Product>
         <Description>Add interceptor which allows to map exceptions to gRPC status codes</Description>
         <Authors>Protomorphine</Authors>
@@ -14,7 +14,10 @@
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <RepositoryUrl>https://github.com/protomorphine/GrpcExceptionsMapping</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
-        <PackageLicenseExpression>GPL-3.0</PackageLicenseExpression>
+        <PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
+        <PackageReleaseNotes>https://github.com/protomorphine/GrpcExceptionsMapping/releases</PackageReleaseNotes>
+        <Copyright>Copyright © Daniil Zaytsev.</Copyright>
+      
     </PropertyGroup>
 
     <ItemGroup>
