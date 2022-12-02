@@ -6,7 +6,8 @@
 
     <PropertyGroup Label="Package">
         <PackageId>Protomorphine.GrpcExceptionsMapping</PackageId>
-        <PackageVersion>1.0.1-beta</PackageVersion>
+        <PackageVersion>0.1.0-beta</PackageVersion>
+        <Version>0.1.0-beta</Version>
         <Product>GrpcExceptionsMapping</Product>
         <Description>Add interceptor which allows to map exceptions to gRPC status codes</Description>
         <Authors>Protomorphine</Authors>
