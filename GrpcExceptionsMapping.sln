@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcExceptionsMapping", "GrpcExceptionsMapping\Source\GrpcExceptionsMapping\GrpcExceptionsMapping.csproj", "{F552FBB2-1FAA-4872-9A14-5F4396EAB260}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcExceptionsMapping.Test", "GrpcExceptionsMapping\Tests\GrpcExceptionsMapping.Test\GrpcExceptionsMapping.Test.csproj", "{80370B6D-75CC-4E43-803A-A85544451676}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F552FBB2-1FAA-4872-9A14-5F4396EAB260}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F552FBB2-1FAA-4872-9A14-5F4396EAB260}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F552FBB2-1FAA-4872-9A14-5F4396EAB260}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F552FBB2-1FAA-4872-9A14-5F4396EAB260}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80370B6D-75CC-4E43-803A-A85544451676}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80370B6D-75CC-4E43-803A-A85544451676}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80370B6D-75CC-4E43-803A-A85544451676}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80370B6D-75CC-4E43-803A-A85544451676}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
