@@ -5,12 +5,12 @@ using GrpcExceptionsMapping.Options;
 using Microsoft.Extensions.DependencyInjection;
 
 /// <summary>
-/// IServiceCollection extensions
+/// IServiceCollection extensions.
 /// </summary>
 public static class ServiceCollectionExtensions
 {
     /// <summary>
-    /// Initialize map
+    /// Initialize map.
     /// </summary>
     /// <param name="services">Service collection.</param>
     /// <param name="options">Mapping options.</param>
@@ -23,7 +23,7 @@ public static class ServiceCollectionExtensions
     }
 
     /// <summary>
-    /// Add <see cref="ExceptionHandlingInterceptor"/> in gRPC request pipeline
+    /// Add <see cref="ExceptionHandlingInterceptor"/> in gRPC request pipeline.
     /// </summary>
     /// <param name="services">Service collection.</param>
     public static void UseGrpcExceptionMapping(this IServiceCollection services) =>

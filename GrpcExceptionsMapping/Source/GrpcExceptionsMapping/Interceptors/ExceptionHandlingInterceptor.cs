@@ -5,12 +5,12 @@ using Grpc.Core.Interceptors;
 using GrpcExceptionsMapping.Map;
 
 /// <summary>
-/// Interceptor which handle exceptions
+/// Interceptor which handle exceptions.
 /// </summary>
 internal class ExceptionHandlingInterceptor : Interceptor
 {
     /// <summary>
-    /// Map
+    /// Map.
     /// </summary>
     private readonly ExceptionGrpcStatusMap map;
 
