@@ -37,12 +37,9 @@ internal sealed class ExceptionHandlingInterceptor : Interceptor
             var statusCode = this.map.Map.FirstOrDefault(kv => kv.Key == exceptionType)
                 .Value ?? StatusCode.Internal;
 
-            if (this.map.EnableDebugException)
-            {
-                throw new RpcException(new Status(statusCode, e.Message, e));
-            }
+            var debugException = this.map.EnableDebugException ? e : null;
 
-            throw new RpcException(new Status(statusCode, e.Message));
+            throw new RpcException(new Status(statusCode, e.Message, debugException));
         }
     }
 }
