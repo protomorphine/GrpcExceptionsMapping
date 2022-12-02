@@ -1,6 +1,6 @@
 # Mapping Exceptions on gRPC Status Codes
 
-[![GrpcExceptionsMapping NuGet Package](https://img.shields.io/nuget/v/GrpcExceptionsMapping.svg)](https://www.nuget.org/packages/GrpcExceptionsMapping/) [![GrpcExceptionsMapping NuGet Package Downloads](https://img.shields.io/nuget/dt/GrpcExceptionsMapping)](https://www.nuget.org/packages/GrpcExceptionsMapping)
+[![GrpcExceptionsMapping NuGet Package](https://img.shields.io/nuget/v/Protomorphine.GrpcExceptionsMapping.svg)](https://www.nuget.org/packages/Protomorphine.GrpcExceptionsMapping/) [![GrpcExceptionsMapping NuGet Package Downloads](https://img.shields.io/nuget/dt/Protomorphine.GrpcExceptionsMapping)](https://www.nuget.org/packages/Protomorphine.GrpcExceptionsMapping/g)
 
 Interceptor which allows to map exceptions on specified gRPC status code.
 
