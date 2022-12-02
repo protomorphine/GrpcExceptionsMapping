@@ -23,6 +23,11 @@ public class ExceptionMappingOptions
         => this.exceptionMap.Map.Add(typeof(TException), (StatusCode)statusCode);
 
     /// <summary>
+    /// Enable debug exceptions.
+    /// </summary>
+    public void EnableDebugExceptions() => this.exceptionMap.EnableDebugException = true;
+
+    /// <summary>
     /// Gets exception - gRPC status code map.
     /// </summary>
     /// <returns>Map.</returns>
