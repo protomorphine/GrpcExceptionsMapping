@@ -1,6 +1,7 @@
 ﻿namespace GrpcExceptionsMapping.Extensions;
 
 using GrpcExceptionsMapping.Interceptors;
+using GrpcExceptionsMapping.Map;
 using GrpcExceptionsMapping.Options;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
@@ -28,6 +29,13 @@ public static class ServiceCollectionExtensions
     /// Add <see cref="ExceptionHandlingInterceptor"/> in gRPC request pipeline.
     /// </summary>
     /// <param name="services">Service collection.</param>
-    public static void UseGrpcExceptionMapping(this IServiceCollection services) =>
+    public static void UseGrpcExceptionMapping(this IServiceCollection services)
+    {
+        if (services.All(x => x.ServiceType != typeof(ExceptionGrpcStatusMap)))
+        {
+            throw new InvalidOperationException($"Call {nameof(AddGrpcExceptionMapping)} firstly!");
+        }
+
         services.AddGrpc(opt => opt.Interceptors.Add<ExceptionHandlingInterceptor>());
+    }
 }

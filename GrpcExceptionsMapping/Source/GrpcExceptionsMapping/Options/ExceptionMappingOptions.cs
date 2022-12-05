@@ -18,9 +18,9 @@ public class ExceptionMappingOptions
     /// </summary>
     /// <param name="statusCode">gRPC status code.</param>
     /// <typeparam name="TException">Type of Exceptions.</typeparam>
-    public void Map<TException>(Enum statusCode)
+    public void Map<TException>(StatusCode statusCode)
     where TException : Exception
-        => this.exceptionMap.Map.Add(typeof(TException), (StatusCode)statusCode);
+        => this.exceptionMap.Map.Add(typeof(TException), statusCode);
 
     /// <summary>
     /// Enable debug exceptions.
