@@ -3,6 +3,7 @@
 using GrpcExceptionsMapping.Interceptors;
 using GrpcExceptionsMapping.Options;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 
 /// <summary>
 /// IServiceCollection extensions.
@@ -14,12 +15,13 @@ public static class ServiceCollectionExtensions
     /// </summary>
     /// <param name="services">Service collection.</param>
     /// <param name="options">Mapping options.</param>
-    public static void AddGrpcExceptionMapping(this IServiceCollection services, Action<ExceptionMappingOptions> options)
+    public static void AddGrpcExceptionMapping(
+        this IServiceCollection services,
+        Action<ExceptionMappingOptions> options)
     {
         ExceptionMappingOptions mappingOptions = new();
         options.Invoke(mappingOptions);
-
-        services.AddSingleton(mappingOptions.GetMap());
+        services.TryAddSingleton(mappingOptions.GetMap());
     }
 
     /// <summary>
