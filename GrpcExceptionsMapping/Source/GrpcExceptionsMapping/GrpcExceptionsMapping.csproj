@@ -11,7 +11,7 @@
         <Authors>Protomorphine</Authors>
         <PackageTags>gRPC;Exceptions;Error-Handling</PackageTags>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <WebPage>https://github.com/protomorphine/GrpcExceptionsMapping</WebPage>
+        <PackageProjectUrl>https://github.com/protomorphine/GrpcExceptionsMapping</PackageProjectUrl>
         <RepositoryUrl>https://github.com/protomorphine/GrpcExceptionsMapping.git</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
         <PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>

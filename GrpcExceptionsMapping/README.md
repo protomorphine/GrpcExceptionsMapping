@@ -6,10 +6,21 @@ Interceptor which allows to map exceptions on specified gRPC status code.
 
 ## Usage
 
+- Add mapping:
 ```c#
-builder.Services.AddGrpcExceptionMapping(options => {
+builder.Services.AddGrpcExceptionMapping(options =>
+{
+    // add mappings ObjectNotFoundException into NotFound status code
     options.Map<ObjectNotFoundException>(StatusCode.NotFound);
+    
+    // origin exception will be part of RpcException
+    options.EnableDebugExceptions();
 });
+```
 
+- Add interceptor to request pipeline:
+
+_NOTE! Call `AddGrpcExceptionMapping` before activating interceptor!_
+```c#
 builder.Service.UseGrpcExceptionMapping();
 ```
